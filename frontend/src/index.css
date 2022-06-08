@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* .Termometro{
+    padding-top: 10rem;
+    padding-left: 15rem;
+} */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+
+ul {
+    list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.chart-wrapper {
+    display: grid;
+    justify-content: center;
+    grid-column-gap: 4rem;
+    grid-template-columns: auto auto auto;
+    margin-top: 30px;
+}
+
+.chart-wrapper .chart-y {
+    display: grid;
+    grid-row-gap: 3rem;
+}
+
+.Circulo{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    border-radius: 50%; 
+    background: #08B;
+    left: 25%;  
+    bottom: 10%;
+}
+
+.Cuadrado{
+    width: 70px;
+    height: 280px;
+    position: absolute;
+    background: #08B;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30% ;
+    left: 27.7%;
+    bottom: 28%;
+}
+
+.Circulo-Temp{
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    border-radius: 50%; 
+    background: black;
+    left: 25.6%;  
+    bottom: 11%;
+}
+
+.Cuadrado-Temp{
+    width: 55px;
+    height: 280px;
+    position: absolute;
+    background: black;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30% ;
+    left: 28.3%;
+    bottom: 26%;
+}
+
+.Circulo-Temp-1{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    border-radius: 50%; 
+    background:red;
+    bottom: 12.2%;
+    left: 26.2%;  
+}
+
+.Cuadrado-Temp-1{
+    width: 45px;
+    height: 150px;
+    position: absolute;
+    background: red;
+    left: 28.7%;
+    bottom: 27%;
 }
